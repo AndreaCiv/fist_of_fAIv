@@ -106,4 +106,4 @@ if __name__ == '__main__':
     modello_generativo = ModelloGenerativo()
     print(modello_regressione.predict(info_via))
     print(modello_generativo.generate_report(info_via))
-    '''
+'''

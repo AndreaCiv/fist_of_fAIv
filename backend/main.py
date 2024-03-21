@@ -19,14 +19,19 @@ mgen = ModelloGenerativo()
 @api.post("/inference")
 @cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def inference():
+    ret = {}
     try:
         body = request.get_json()
         mreg_result = mreg.predict(body)
+        mgen_result = mgen.generate_report(body)
         ret = {
-            "score" : mreg_result / 400
+            "score" : mreg_result / 400,
+            "report" : mgen_result
         }   
     except Exception as err:
-        print("error:", err)
+        ret = {
+            "error" : err
+        }
     finally:
         return  ret
 
