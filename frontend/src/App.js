@@ -1,5 +1,8 @@
-import './App.css';
 import React, { useEffect, useState } from 'react';
+import Header from './components/tailwind/Header';
+import Footer from './components/tailwind/Footer';
+import Dashboard from './components/custom/Dashboard';
+//import './css/input.css';
 
 function App() {
 
@@ -32,9 +35,11 @@ function App() {
   useEffect(() => test);
 
   return (
-    <div className="App">
-      {message}
-    </div>
+    <>
+    <Header />
+    <Dashboard />
+    <Footer/>
+    </>
   );
 }
 
