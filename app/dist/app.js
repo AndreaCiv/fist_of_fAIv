@@ -15,6 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const axios_1 = __importDefault(require("axios"));
 const express_1 = __importDefault(require("express"));
 const models_1 = require("./models");
 const http_status_codes_1 = require("http-status-codes");
@@ -50,9 +51,20 @@ app.post("/search", (req, res, next) => __awaiter(void 0, void 0, void 0, functi
 app.post("/road", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const name = req.body.name;
     const road = yield models_1.Strade.findOne({
-        "Strada": name
+        "Strada": { $regex: new RegExp(name, "i") }
     });
     const json = JSON.stringify(road);
+    res.status(http_status_codes_1.StatusCodes.OK).send(json);
+}), errorHandler);
+app.post("/inference", (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    const info = req.body;
+    console.log(info);
+    let url = "http://backend:5000/inference";
+    const json = yield axios_1.default.post(url, info)
+        .then((data) => __awaiter(void 0, void 0, void 0, function* () {
+        let ret = data.data;
+        return ret;
+    }));
     res.status(http_status_codes_1.StatusCodes.OK).send(json);
 }), errorHandler);
 app.listen(4000);

@@ -2,3 +2,6 @@ flask
 pandas
 Flask-Cors
 pymongo
+vertexai
+joblib
+scikit-learn

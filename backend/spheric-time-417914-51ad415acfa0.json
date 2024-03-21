@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "spheric-time-417914",
+  "private_key_id": "51ad415acfa0ff876e0352c54472732142256e30",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDOrGLjf+0zYhCo\n4wMBkpTetuuXNOJ979hde9xpyJGUTqYXtULNztAsTfxTNxaK9RsRmqxGNispsk/u\n0WmfThX7PKNenoq/kP5qkVK6V92N1vJfYH+4xpi0ZMIAwE4v/X9CsUxAqfSNGdv2\nCeq5JYiKMdXSKsapopfUV/9fUB4QvM/pF4xAD/RNUEo3DitnP8Pqmq76zA82K1t0\nniY3D7BwZ9Pz3wQVeOpzqwKlELhlAnCZda+0AHpGjXblSSQ94JgQi0aKlq6IuByV\nKAhjQVe5WSbvDaf4K2ZAUO2eEf38ZpfiJQlVqfYwUo2MxRfxY6o7ulzYN0TMFNRt\n2Bakc6kzAgMBAAECggEAA22jJN7mNdcDxBCo5/B2aKCZiQpPd2fbFk8KUSvyPtYY\n9b+TJ1OJLg4Ci2JbhtL+LLG/0usw35Q3nFFUcPyzG+5tBkj/BTTn+HCffi+WIV/8\nVnRB7e4WwUkC3+GZ5drlOwYaNx0M5bZkRFQxpBJzxJYhqS5r2bwugv/or+bZxigt\niYeXq4Qkbi1t/2aFiDtvnInmi6N38OxyrIJsTGxebvj52k8nZt9iNnXKKg4W+vgz\njcUSEetbHe5INDhbmqyNXMHfZ5YjJsRH+1FVA06N1EQipf59suplyvmaZo4TPZIo\nyrvWitBiQQ5N1AjjrQeitE5JKqHzmViYAvmuMTtwCQKBgQDoXoOYKhusNKkcuTJZ\nTkEr263mbDkHyqxyEXuc+jGEtNH8hTFT+fxt06Ck9SBLzwa7Rsv5ujOqdFPw9JKG\nqBJcnPuEHI3eS1YRJxt9xbhJix5/8ieM7ObCUd5TYiiNVrR9roo0eIfNKRmTxtE6\nOksy1pe41gCovTEOjPuqq7K3qwKBgQDjsOi0EeqsSA1UzTCpWuYEW/cB1+nQfNXq\nyxneTP+WWuDicyU/Z6M7ZLbuIc8iTIOYJul2yivLGC0fdvKSLGlofC4OjS5yObcX\napPPsRwVZ7wpOEDHJMo2SYVKh7F3GZJ7/2/Orta+hlklidu8QCRDlGzbyBxIHFKy\nh6gh+LesmQKBgD0Lf2S9QzHVT8wk9w4xGbvs5V2QdtcOLol1AFV4AQRNAJFnaFMY\nbHFp1F0hrI9d3vXaHoIHocUY9GhryAaqJtC/yO+nFLoebojpDjbXd5eSfbu9IRjL\nr7/DBDZBpkejTJ1r+hDYzUxfjMGezJ6Qa+r6Jze+uMObmESrUv4+RyArAoGAcxAw\n2OcA/+U9j3BOOhdsjCFpdy4Ew86CUDApN3UT6IiuguGLnjoifF5OL5M4WO3vxpFL\nhDNw5CaojvEObp4w+pNetw3Tvfe6tgOvBNNNDOgqZ249FiZaZgrLaDmgjj6HD1Cr\n0Pf8H7ZHELhVKhIEAX7dcEf1Ot/NTtlNNzW4pGkCgYBmglywTsADhjphDcpRSwOd\nqDm/+8qBr9e2upTn5Ht5LKj+Mjnlz/Ny5ogMUGocLHluPkPg/nZ0rlQtWZ8LKkuL\nYR0wYwRcvpJcjIj01O3gtuCeKfk/mEvyF8Ys/0AB1Z3ylNOhGBJ0WiWx/pxeiPlQ\nTkXEKWFfziViC666b8T59g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "prova-def@spheric-time-417914.iam.gserviceaccount.com",
+  "client_id": "103266282883816276786",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prova-def%40spheric-time-417914.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

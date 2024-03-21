@@ -2,7 +2,7 @@
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const mongoose = require('mongoose');
-
+import axios from 'axios'
 import express, { Request, Response, NextFunction } from 'express';
 import { Incidenti, Strade } from './models';
 
@@ -70,6 +70,20 @@ app.post("/road", async (req : any, res : any, next : any) => {
     );
     // convert to json
     const json = JSON.stringify(road);
+    res.status(StatusCodes.OK).send(json);
+}, errorHandler);
+
+
+app.post("/inference", async (req : any, res : any, next : any) => {
+    const info = req.body;
+    console.log(info);
+    let url = "http://backend:5000/inference";
+    // do post request to inference service
+    const json = await axios.post(url, info)
+    .then(async (data:any) => {
+        let ret = data.data;
+        return ret;
+    });
     res.status(StatusCodes.OK).send(json);
 }, errorHandler);
 
