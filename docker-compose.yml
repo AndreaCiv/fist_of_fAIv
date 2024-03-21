@@ -11,6 +11,18 @@ services:
     networks:
       - peppino
     depends_on:
+      - app
+  app:
+    build : './app'
+    image : app:latest
+    container_name: app
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 4000:4000
+    networks:
+      - peppino
+    depends_on:
       - backend
   backend:
     build : './backend'
