@@ -1,3 +1,3 @@
-FROM nginx:alpine
-COPY ./index.html /usr/share/nginx/html
-COPY ./default.conf /etc/nginx/conf.d
+FROM node:lts-stretch-slim
+WORKDIR /usr/src/frontend
+CMD npm start

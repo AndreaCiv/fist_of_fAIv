@@ -1,5 +1,5 @@
 FROM python:3.9-slim-buster
-COPY . /cpu
-WORKDIR /cpu
+COPY . /backend
+WORKDIR /backend
 RUN pip install -r requirements.txt
 ENTRYPOINT python -u main.py

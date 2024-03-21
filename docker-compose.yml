@@ -7,16 +7,27 @@ services:
     volumes:
       - ./frontend:/usr/src/frontend
     ports:
-      - 80:80
+      - 3000:3000
+    networks:
+      - peppino
   backend:
     build : './backend'
     image : backend:latest
     container_name: backend
+    expose:
+      - 5000
     ports:
-      - 3000:80
+      - 5000:5000
+    networks:
+      - peppino
   mongodb:
     image: mongo:4.4.29-focal
     ports: 
       - 27017:27017
     volumes:
-      - ./data:/data/db
+      - ./mongo_data:/data/db
+    networks:
+      - peppino
+networks:
+  peppino:
+    driver: bridge
