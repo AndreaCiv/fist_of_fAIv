@@ -10,6 +10,8 @@ services:
       - 3000:3000
     networks:
       - peppino
+    depends_on:
+      - backend
   backend:
     build : './backend'
     image : backend:latest
@@ -20,8 +22,11 @@ services:
       - 5000:5000
     networks:
       - peppino
+    depends_on:
+      - mongodb
   mongodb:
     image: mongo:4.4.29-focal
+    container_name: mongodb
     ports: 
       - 27017:27017
     volumes:
