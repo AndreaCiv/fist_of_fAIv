@@ -11,6 +11,7 @@ api = Flask(__name__)
 api.config['CORS_HEADERS'] = 'Content-Type'
 # set header access control allow methods to all
 cors = CORS(api, resources={r"/*": {"origins": "*"}})
+client = pymongo.MongoClient('mongodb://mongodb:27017/')
 
 
 # route that sends inference task
@@ -26,6 +27,11 @@ def test():
     finally:
         return  ret
 
+@api.post("/road")
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
+def post_road():
+    return 0
+
 
 # entrypoint
 if __name__ == "__main__":
@@ -35,13 +41,13 @@ if __name__ == "__main__":
         Collection_incidenti = db['incidenti']
         Collection_strade = db['strade']
 
-        with open("dataset_incidenti.json") as file:
+        '''with open("dataset_incidenti.json") as file:
             file_data = json.load(file)
         Collection_incidenti.insert_many(file_data)
 
         with open("dataset_strade.json") as file:
             file_data = json.load(file)
-        Collection_strade.insert_many(file_data)
+        Collection_strade.insert_many(file_data)'''
 
 
     except Exception as e:
