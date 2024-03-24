@@ -19,6 +19,9 @@ const incidentiSchema = new mongoose.Schema({
     Deceduti: Number,
     TipoStrada: String,
     Pavimentazione: String,
+    data: {
+        type: Object
+    }
 }, { collection: 'incidenti' });
 const stradeSchema = new mongoose.Schema({
     Localizzazione: String,
@@ -34,6 +37,9 @@ const stradeSchema = new mongoose.Schema({
     Numero_incidenti: Number,
     TipoStrada: String,
     Pavimentazione: String,
+    data: {
+        type: Object
+    }
 }, { collection: 'strade' });
 exports.Incidenti = mongoose.model('incidenti', incidentiSchema);
 exports.Strade = mongoose.model('strade', stradeSchema);

@@ -18,12 +18,13 @@ function classNames(...classes) {
 
 export default function Footer() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-sky-950">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 h-[6rem]">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="text-md text-white p-2 text-center">Dataset aggiornato con 230597 incidenti avvenuti nella città di Roma</div>
+              <div className="absolute text-white text-center inset-y-0 left-0 flex items-center sm:hidden">
               </div>
             </div>
           </div>
